@@ -1,0 +1,38 @@
+@import "../styles/_colors";
+
+@font-face {
+  font-family: "Concert_One";
+  src: url("../fonts/Concert_One/ConcertOne-Regular.ttf");
+}
+
+
+.header {
+  padding: 1rem 0 1.5rem;
+}
+
+.title {
+  color: $platinum;
+  white-space: nowrap;
+  font-size: 50px;
+}
+
+.nav-list {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+}
+
+.nav-item {
+  color: $light-blue;
+  font-size: 1rem;
+  margin-right: 1.3rem;
+  text-decoration: none;
+}
+
+.nav-item:hover {
+  color: $orange;
+}
+
+.active-nav-item {
+  color: $trolly-grey;
+}

@@ -6,4 +6,22 @@
 
 module.exports = {
   /* Your site config here */
+  siteMetadata: {
+    title: 'Personal Page!',
+    author: 'Thomas Tang'
+  },
+
+  plugins: [
+    'gatsby-plugin-sass',
+    'gatsby-plugin-playground',
+
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'src',
+        path: `${__dirname}/src/`
+      }
+    },
+    'gatsby-transformer-remark'
+  ]
 }
