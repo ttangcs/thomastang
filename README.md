@@ -4,4 +4,4 @@ Mobile Compatibility still needs to be worked on with Parallax
 
 ### Author
 
-   Thomas Tang - https:///www.thomastang.me
+   Thomas Tang - https://www.thomastang.me
