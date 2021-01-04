@@ -55,6 +55,7 @@ const Resume = () => {
         <Skill skillIcon={postgreSQLSVG} skillName="PostgreSQL" />
       </div>
     </div>
+    <div style={{marginBottom: '20px'}}/>
     <div style={{textAlign: 'center'}}>
       <a href="../content/Resume_Jan2020.pdf" className={resumeStyles.downloadButton} download>Download CV</a>
     </div>
