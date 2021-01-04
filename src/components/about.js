@@ -1,35 +1,15 @@
 import React from 'react'
-import { graphql, useStaticQuery } from 'gatsby'
-import aboutStyles from './about.module.scss'
+import aboutMeSVG from '../svg/aboutme.svg'
 
 const About = () => {
-  const data = useStaticQuery(graphql`
-  query {
-    allMarkdownRemark {
-      edges {
-        node{
-          frontmatter{
-            title
-            avatar
-            skills
-          }
-          html
-        }
-      }
-    }
-  }
-  `)
   return(
     <div>
-      {data.allMarkdownRemark.edges.map((edge) => {
-      return (
-        <about>
-          <h1>{edge.node.frontmatter.title}</h1>
-          <div dangerouslySetInnerHTML = {{__html: edge.node.html}} />
-          <a href="mailto:ttangcs@gmail.com" className={aboutStyles.getInTouch}>Get in Touch</a>
-        </about>
-      )
-    })}
+      <img src={aboutMeSVG} alt="About me icon" width="25%" style={{float: 'right'}}/>
+      <h2>About me</h2>
+      <p>
+        My name is Thomas. I am a December 2020 Graduate from Westminster College. I learned about my passion of software development senior year of highschool.
+        I like to work on personal projects, currently working on a Point of Sale/Inventory Management System and in search of a software engineering position. I also like to balance my time with working out, gaming, and photography.
+      </p>
     </div>
   )
 }
