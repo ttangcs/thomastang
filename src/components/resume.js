@@ -56,8 +56,9 @@ const Resume = () => {
       </div>
     </div>
     <div style={{marginBottom: '20px'}}/>
-    <div style={{textAlign: 'center'}}>
+    <div style={{textAlign: 'center', display:'flex', justifyContent: 'space-evenly'}}>
       <a href="https://github.com/ttangcs/thomastang/raw/master/src/content/Resume_Jan2020.pdf" className={resumeStyles.downloadButton} download>Download CV</a>
+      <a href="mailto:ttangcs@gmail.com" className={resumeStyles.contactButton} download>Contact</a>
     </div>
     </div>
     
